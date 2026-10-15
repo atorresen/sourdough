@@ -118,3 +118,11 @@ th {
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+img {
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 40px;
+    border-radius: 16%;
+    max-width: 95%;
+}
