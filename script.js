@@ -85,15 +85,15 @@ function display() {
 
     let sentences = [
         "Between " + displayTimes[0] + " and " + displayTimes[1] + ", mix 92g starter, 92g flour, and 92g water. \
-        Leave in a loosely covered jar in a warm place to ferment for 6 – 12 hours.",
+        Leave in a loosely covered jar in a warm place to ferment for 6–12 hours.",
         "At " +  displayTimes[2] + ", mix 92g starter (1/3 cup), 460g flour (3 2/3 cups), 280g water (1 cup), and 9g salt. \
-        Knead 2-5 mins, adding up to 50g more water if necessary. Let sit in a warm place.",
+        Knead 2–5 mins, adding up to 50g more water if necessary. Cover and let sit in a warm place to ferment.",
         "At " + displayTimes[3] + ", " + displayTimes[4] + ", " + displayTimes[5] + ", and " + displayTimes[6] + ", stretch the dough. \
-        Let the dough continue sitting for 1-2 more hours.",
+        Let the dough continue sitting for 1–2 more hours.",
         "At " + displayTimes[7] + ", shape the dough into a loaf and leave uncovered for 20 minutes.",
-        "At " + displayTimes[8] + ", place the dough in a proofing basket and let sit covered for 2-4 hours.",
+        "At " + displayTimes[8] + ", place the dough in a proofing basket. Cover and let sit in a warm place to proof.",
         "At " + displayTimes[9] + ", preheat the oven to 450°F with a dutch oven inside.",
-        "At " + displayTimes[10] + " bake for 20 minutes with the lid on, then at " + displayTimes[11] + " remove the lid and continue baking for 30 more minutes.",
+        "At " + displayTimes[10] + ", slice the top of loaf a few times and bake for 20 minutes with the lid on. Then at " + displayTimes[11] + " remove the lid and continue baking for 30 more minutes.",
         "At " + displayTimes[12] +  ", remove the bread and let cool for 2 hours."
     ];
     sentences.forEach(str => {
