@@ -3,7 +3,7 @@ function sourdoughTiming() {
     let start = timeStringToDate(startString);
 
     let ferment = document.getElementById("fermentInput").value * 1;
-    let prove = document.getElementById("proveInput").value * 1;
+    let proof = document.getElementById("proofInput").value * 1;
 
     let feed = [addHours(start, -12), addHours(start, -6)];
 
@@ -15,9 +15,9 @@ function sourdoughTiming() {
     let preshape = addHours(start, ferment);
     let shape = addHours(preshape, 1/3); // 20 minutes after preshape
 
-    let preheat = addHours(shape, prove - 1/2); // 30 minutes before prove is finished
+    let preheat = addHours(shape, proof - 1/2); // 30 minutes before proof is finished
 
-    let bakeLidOn = addHours(shape, prove);
+    let bakeLidOn = addHours(shape, proof);
     let bakeLidOff = addHours(bakeLidOn, 1/3); // 20 minutes after starting bake
     let cool = addHours(bakeLidOff, 1/2); // 30 minutes after taking lid off
     
@@ -71,7 +71,7 @@ function displayTime(time) {
 
 function display() {
     let times = sourdoughTiming();
-    let tableRows = ["feed", "mix", "stretch", "shape", "prove", "preheat", "bake", "lidOff", "cool"];
+    let tableRows = ["feed", "mix", "stretch", "shape", "proof", "preheat", "bake", "lidOff", "cool"];
     for (let i = 0; i < times.length; i++) {
         document.getElementById(tableRows[i]).innerHTML = displayTime(times[i])
     };

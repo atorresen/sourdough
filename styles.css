@@ -42,9 +42,11 @@ input, button {
 
 button {
     background-color: sienna;
+    font-family: "Verdana", sans-serif;
     color: white;
+    text-align: center;
     padding: 8px;
-    width: 80px;
+    width: 88px;
     margin-left: 50%;
     transform: translate(-40px, 0);
 }
