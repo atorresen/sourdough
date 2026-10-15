@@ -8,38 +8,44 @@
 </head>
 <body>
     <div id="content">
-        <h1>sourdough timer</h1>
-        <p>Based on a recipe from <a href="https://www.theperfectloaf.com/sourdough-bread-with-all-purpose-flour/ ">The Perfect Loaf</a></p>
+        
+        <div class="top-container">
+            <h1>sourdough timer</h1>
+            <div id="inputs">
+                 <p><em>Based on a recipe from</em> <a href="https://www.theperfectloaf.com/sourdough-bread-with-all-purpose-flour/ ">The Perfect Loaf</a></p>
 
-        <p>start time: <input id="startTime" type="time" value="07:00"></p>
-        <p>ferment length: 
-            <input class="numberInput" id="fermentInput" type="number" min="3" max="5" step="0.25" value="4">
-            <em>(3 – 5 hours)</em>
-        </p>
-        <p>prove length: 
-            <input class="numberInput"  id="proveInput" type="number" min="2" max="4" step="0.25" value="3">
-            <em>(2 – 4 hours)</em>
-        </p>
+                <p>start time: <input id="startTime" type="time" value="07:00"></p>
+                <p>ferment length: 
+                    <input class="numberInput" id="fermentInput" type="number" min="3" max="5" step="0.25" value="4">
+                    <em>(3–5 hours)</em>
+                </p>
+                <p>prove length: 
+                    <input class="numberInput"  id="proveInput" type="number" min="2" max="4" step="0.25" value="3">
+                    <em>(2–4 hours)</em>
+                </p>
 
-        <button onclick="display()">calculate</button>
+                <button onclick="display()">calculate</button>
+            </div>
+        </div>
         
         <hr>
 
         <div class="container">
             <table>
-                <tr><td>feed</td><td id="feed"></td></tr>
-                <tr><td>mix</td><td id="mix"></td></tr>
-                <tr><td>stretch</td><td id="stretch"></td></tr>
-                <tr><td>shape</td><td id="shape"></td></tr>
-                <tr><td>prove</td><td id="prove"></td></tr>
-                <tr><td>preheat</td><td id="preheat"></td></tr>
-                <tr><td>bake</td><td id="bake"></td></tr>
-                <tr><td>lid off</td><td id="lidOff"></td></tr>
-                <tr><td>cool</td><td id="cool"></td></tr>
+                <tr><th>feed</th><td id="feed"></td></tr>
+                <tr><th>mix</th><td id="mix"></td></tr>
+                <tr><th>stretch</th><td id="stretch"></td></tr>
+                <tr><th>shape</th><td id="shape"></td></tr>
+                <tr><th>prove</th><td id="prove"></td></tr>
+                <tr><th>preheat</th><td id="preheat"></td></tr>
+                <tr><th>bake</th><td id="bake"></td></tr>
+                <tr><th>lid off</th><td id="lidOff"></td></tr>
+                <tr><th>cool</th><td id="cool"></td></tr>
             </table>
             <div id="sentences"></div>
-        </div>
-        
+        </div>  
+
+        <hr>
     </div>
 
     <script src="script.js"></script>
