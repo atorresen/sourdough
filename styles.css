@@ -1,0 +1,56 @@
+body {
+    background-color: lightskyblue;
+    font-family: sans-serif;
+    margin: 0 auto;
+}
+
+.numberInput {
+    width: 70px;
+}
+
+em {
+    color: #bbb;
+    font-style: normal;
+}
+
+hr {
+    margin: 20px -20px;
+    border: none;
+    border-top: solid lightgray 1px;
+}
+
+table, td {
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 8px;
+    min-width: 80px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+    #content {
+        width: 90%;
+    }
+}
+
+#sentences {
+    padding: 0 16px;
+    max-width: 700px;
+}
+
+#content {
+    background-color: white;
+    padding: 0 16px;
+    position: absolute;
+    min-height: 100%;
+    min-width: 65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
